@@ -6,7 +6,7 @@
     {
         static void Main(string[] args)
         {
-            int inputTal = 1299721;
+            int inputTal = 53;
             bool primFlag = ErPrimtal(inputTal);
 //          bool primFlag = ErPrimtalAdvanced(inputTal);
 
@@ -33,8 +33,14 @@
                 for (int i = 2; i < tal; i++)
                 {
                     if (tal % i == 0)
+
                     {
                         return false;
+                    }
+
+                    if (i > Math.Sqrt(tal))
+                    {
+                        break;
                     }
                 }
                 return true;
