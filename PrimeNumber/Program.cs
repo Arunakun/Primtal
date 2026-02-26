@@ -9,23 +9,26 @@
             Console.Write("Find alle primtal op til: ");
             int n = int.Parse(Console.ReadLine());
             for (int i = 0; i <= n; i++)
-            {if (ErPrimtal(i))
-                { Console.Write($"{i} "); }
-             }
+            {
+                if (ErPrimtal(i))
+                {
+                    Console.Write($"{i} ");
+                }
+            }
+        }
 
 //          bool primFlag = ErPrimtal(inputTal);
 //          bool primFlag = ErPrimtalAdvanced(inputTal);
 
 
- //           if (primFlag)
- //           {
- //               Console.WriteLine($"\n\n{inputTal} er et primtal");
-  //          }
-  //          else
-  //          {
-  //              Console.WriteLine($"{inputTal} er ikke et primtal");
-  //          }
-        }
+//          if (primFlag)
+//          {
+//              Console.WriteLine($"\n\n{inputTal} er et primtal");
+//          }
+//          else
+//          {
+//              Console.WriteLine($"{inputTal} er ikke et primtal");
+//          }
 
 
         static bool ErPrimtal(int tal)
